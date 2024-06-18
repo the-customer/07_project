@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid_Columns</title>
+    <style>
+        .grid{
+            display: grid;
+            /*grid-template-columns: 200px 100px 100px 300px 100px 100px;*/
+            /*grid-template-columns: 100px 100px 100px;*/
+            /*grid-template-columns: 100px 200px auto;*/
+            /*grid-template-columns: 100px auto 100px;*/
+            /*grid-template-columns: repeat(5,200px);*/
+            /*grid-template-columns: repeat(5,auto);*/
+            /*grid-template-columns: 1fr 2fr auto;*/
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 10px;
+
+        }
+        .item{
+            padding: 3rem;
+            background-color: darkred;
+            border: 2px solid;
+            text-align: center;
+            font-weight: 900;
+            font-size: 1.5rem;
+            color: aliceblue;
+        }
+
+        main{
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 10px;
+            
+        }
+        main section{
+            background-color: whitesmoke;
+        }
+        main aside{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid_Columns</h1>
+    <div class="grid">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, nisi.</p>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+    </div>
+    <h2>Exemple:</h2>
+    <main>
+        <section>
+            <h3>Welcome to DIT</h3>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem tenetur, inventore alias totam tempora dolore iste corrupti commodi, quas laboriosam quibusdam repudiandae sit voluptate a ab accusamus dignissimos, facere labore.
+            </p>
+        </section>
+        <aside>
+            <h3>Menu</h3>
+            <ul>
+                <li>menu 1</li>
+                <li>menu 2</li>
+                <li>menu 3</li>
+                <li>menu 4</li>
+            </ul>
+        </aside>
+    </main>
+</body>
+</html>

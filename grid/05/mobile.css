@@ -1,0 +1,9 @@
+h1{
+    color: red;
+}
+@media (max-width:380px){
+    .grid{
+        background-color: lightblue;
+        grid-template-columns: repeat(1,1fr);
+    }
+}

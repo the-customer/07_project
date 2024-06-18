@@ -1,0 +1,21 @@
+h1{
+    color: blue;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+}
+@media (max-width:1000px){
+    .grid{
+        background-color: lightsalmon;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media (max-width:500px){
+    .grid{
+        background-color: lightblue;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
